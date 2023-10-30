@@ -53,3 +53,27 @@ public class Demo
 	System.out.println(search(arr,target));
 }
 }
+3.//program to find the minimum element in an array
+package project;
+
+import java.lang.reflect.Array;
+
+public class Demo
+{
+	static int min(int[] arr)
+	{
+		int ans=arr[0];
+		for(int i=1;i<arr.length;i++)
+		{
+			if(arr[i]<ans)
+				ans=arr[i];
+		}
+		return ans;
+	}
+	public static void main(String args[])
+	{
+		int[] arr= {10,20,4,12,56,12,45,-34};
+		System.out.println(min(arr));
+	}
+}
+
