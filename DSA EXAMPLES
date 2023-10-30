@@ -76,4 +76,26 @@ public class Demo
 		System.out.println(min(arr));
 	}
 }
+4.finding maxmimum element in an array
+//program to find the minimum element in an array
+package project;
+
+public class Demo
+{
+	static int max(int[] arr)
+	{
+		int ans=arr[0];
+		for(int i=1;i<arr.length;i++)
+		{
+			if(arr[i]>ans)
+				ans=arr[i];
+		}
+		return ans;
+	}
+	public static void main(String args[])
+	{
+		int[] arr= {10,20,4,12,56,12,45,-34};
+		System.out.println(max(arr));
+	}
+}
 
